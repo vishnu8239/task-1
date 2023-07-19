@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script src="script.js"></script>
+
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h5 class="text-center">Contact </h5>
+        <h1 class="text-center">Let's connect</h1>
+        <p class="text-center">Please fill out the form below and we'll reach out right away.</p>
+    <form id="contactForm" class="bg-light">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="firstName">First Name*</label>
+          <input type="text" class="form-control" id="firstName" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="lastName">Last Name*</label>
+          <input type="text" class="form-control" id="lastName" required>
+        </div>
+      </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="email">Email*</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="companyName">Company Name*</label>
+        <input type="text" class="form-control" id="companyName" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="jobTitle">Job Title*</label>
+        <input type="text" class="form-control" id="jobTitle" required>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="likeTo">I'd like to*</label>
+        <select class="form-control" id="likeTo" required>
+          <option value="">Select an option</option>
+          <option value="Request more information">Finance my tech stack</option>
+          <option value="Provide feedback">offer Contract financing to my customers </option>
+          <option value="Other">Something else</option>
+        </select>
+      </div>
+      </div>
+
+      <div class="form-group">
+        <label for="hearAboutUs">How did you hear about us?</label>
+        <input type="text" class="form-control" id="hearAboutUs" required>
+      </div>
+
+      <div class="form-group">
+        <label for="additionalInfo">Anything else you'd like us to know?</label>
+        <textarea class="form-control" id="additionalInfo" rows="4" required></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-info">Submit</button>
+      </div>
+      <div id="alertDiv" class="alert alert-success mt-3" role="alert" style="display: none;">
+        Form submitted successfully!
+      </div>
+
+    </form>
+  </div>
+
+  <!-- Add Bootstrap JS and jQuery scripts -->
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+  
+  
+</body>
+</html>
